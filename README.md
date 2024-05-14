@@ -27,15 +27,17 @@ Tamaño de Ventanas:
 setBounds(100, 100, 900, 520);
 
 Configuración de Ventanas para el proyecto:
-NO SE PUEDE REDIMENSIONAR
-AL HACER CLICK EN LA "X" SE CIERRA EL PROGRAMA
-EL TAMAÑO ES 900px X 520px
-EL ICONO ES icono_ventana.png
-EL TÍTULO ES Chef
+
+	•	La ventana no puede ser redimensionada.
+	•	Al hacer clic en la “X”, se cierra el programa.
+	•	El tamaño predeterminado es 900px x 520px.
+	•	El icono de la ventana es “icono_ventana.png”.
+	•	El título de la ventana es “Chef”.
 
 Código a añadir en cada constructor:
+
 setResizable(false);
 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-setBounds(100, 100, 900, 520); // Tamaño de Ventana
-setIconImage(Toolkit.getDefaultToolkit().getImage(VentanaMenuTiposIngredientes.class.getResource("/recursos/icono_ventana.png"))); // Icono de Ventana
+setBounds(100, 100, 900, 520); // Tamaño de la ventana
+setIconImage(Toolkit.getDefaultToolkit().getImage(VentanaMenuTiposIngredientes.class.getResource("/recursos/icono_ventana.png"))); // Icono de la ventana
 setTitle("Chef");
