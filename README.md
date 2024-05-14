@@ -22,3 +22,6 @@ Diseño:
 Tipografía: Poppins
 Tamaño de Títulos: 40
 Tamaño de Texto: 14
+
+Tamaño de Ventanas:
+setBounds(100, 100, 900, 520);
