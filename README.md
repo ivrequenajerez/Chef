@@ -29,9 +29,13 @@ setBounds(100, 100, 900, 520);
 Configuración de Ventanas para el proyecto:
 
 •	La ventana no puede ser redimensionada.
+
 •	Al hacer clic en la “X”, se cierra el programa.
+
 •	El tamaño predeterminado es 900px x 520px.
+
 •	El icono de la ventana es “icono_ventana.png”.
+
 •	El título de la ventana es “Chef”.
 
 Código a añadir en cada constructor:
