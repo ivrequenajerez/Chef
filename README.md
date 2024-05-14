@@ -37,7 +37,12 @@ Configuración de Ventanas para el proyecto:
 Código a añadir en cada constructor:
 
 setResizable(false);
+
 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
 setBounds(100, 100, 900, 520); // Tamaño de la ventana
+
 setIconImage(Toolkit.getDefaultToolkit().getImage(VentanaMenuTiposIngredientes.class.getResource("/recursos/icono_ventana.png"))); // Icono de la ventana
+
 setTitle("Chef");
+
