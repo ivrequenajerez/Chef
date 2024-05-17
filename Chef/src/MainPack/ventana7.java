@@ -19,12 +19,13 @@ import java.awt.event.MouseEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JSeparator;
 import java.awt.Font;
+import java.awt.List;
 
 public class ventana7 extends JFrame {
 
     private static final long serialVersionUID = 1L;
     private JPanel contentPane;
-    private JTextField textField;
+    private JTextField textFieldBuscar;
 
     /**
      * Launch the application.
@@ -73,14 +74,14 @@ public class ventana7 extends JFrame {
         createButton("New button", 597, 244);
         createButton("New button", 597, 321);
 
-        textField = new JTextField();
-        textField.setBounds(419, 132, 120, 20);
-        contentPane.add(textField);
-        textField.setColumns(10);
+        textFieldBuscar = new JTextField();
+        textFieldBuscar.setBounds(419, 132, 120, 20);
+        contentPane.add(textFieldBuscar);
+        textFieldBuscar.setColumns(10);
 
         JLabel lblNewLabel_1 = new JLabel("BUSCAR");
         lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        lblNewLabel_1.setBounds(292, 134, 74, 17);
+        lblNewLabel_1.setBounds(320, 132, 74, 17);
         contentPane.add(lblNewLabel_1);
         
         JLabel lblNewLabel_2 = new JLabel("New label");
@@ -105,6 +106,11 @@ public class ventana7 extends JFrame {
                                         JMenuItem mntmNewMenuItem_2 = new JMenuItem("PERSONAL");
                                         mntmNewMenuItem_2.setFont(new Font("Segoe UI", Font.PLAIN, 14));
                                         menuBar.add(mntmNewMenuItem_2);
+                                        
+                                        JButton btnAgregar = new JButton("Agregar +");
+                                        btnAgregar.setBackground(new Color(138, 236, 140));
+                                        btnAgregar.setBounds(736, 131, 89, 23);
+                                        contentPane.add(btnAgregar);
 
         createButton("New button", 104, 398);
         createButton("New button", 267, 398);
