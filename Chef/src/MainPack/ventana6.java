@@ -22,6 +22,7 @@ public class ventana6 extends JFrame {
     private static final long serialVersionUID = 1L;
     private JPanel contentPane;
     private JTextField textField;
+    private JButton btnNewButton;
 
     /**
      * Launch the application.
@@ -91,10 +92,10 @@ public class ventana6 extends JFrame {
         textField.setColumns(10);
 
         JLabel lblNewLabel_1 = new JLabel("BUSCAR");
-        lblNewLabel_1.setBounds(341, 113, 46, 14);
+        lblNewLabel_1.setBounds(323, 113, 74, 17);
         contentPane.add(lblNewLabel_1);
         
-        JButton btnAlimento = new JButton("New button");
+        JButton btnAlimento = new JButton("Aliemnto");
         btnAlimento.addMouseListener(new MouseAdapter() {
         	@Override
         	public void mouseClicked(MouseEvent e) {
@@ -108,9 +109,9 @@ public class ventana6 extends JFrame {
         btnAlimento.setBounds(81, 178, 109, 46);
         contentPane.add(btnAlimento);
         
-        JButton btnNewButton_1 = new JButton("New button");
-        btnNewButton_1.setBounds(81, 244, 109, 46);
-        contentPane.add(btnNewButton_1);
+        btnNewButton = new JButton("New button");
+        btnNewButton.setBounds(81, 244, 109, 46);
+        contentPane.add(btnNewButton);
         
         JButton btnNewButton_2 = new JButton("New button");
         btnNewButton_2.setBounds(81, 317, 109, 46);
