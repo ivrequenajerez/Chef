@@ -45,7 +45,7 @@ public class ventana6 extends JFrame {
      */
     public ventana6() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(100, 100, 899, 596);
+        setBounds(100, 100, 899, 596); // Tamaño de Ventana
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
