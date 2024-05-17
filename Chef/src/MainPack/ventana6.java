@@ -16,13 +16,14 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.ImageIcon;
+import javax.swing.JSeparator;
 
 public class ventana6 extends JFrame {
 
     private static final long serialVersionUID = 1L;
     private JPanel contentPane;
     private JTextField textField;
-    private JButton btnNewButton;
 
     /**
      * Launch the application.
@@ -56,18 +57,6 @@ public class ventana6 extends JFrame {
         panel_1.setBounds(175, 10, 522, 38);
         contentPane.add(panel_1);
 
-        JMenuBar menuBar = new JMenuBar();
-        panel_1.add(menuBar);
-
-        JMenuItem mntmNewMenuItem = new JMenuItem("RESTAURANTE");
-        menuBar.add(mntmNewMenuItem);
-
-        JMenuItem mntmNewMenuItem_1 = new JMenuItem("ALMACEN");
-        menuBar.add(mntmNewMenuItem_1);
-
-        JMenuItem mntmNewMenuItem_2 = new JMenuItem("PERSONAL");
-        menuBar.add(mntmNewMenuItem_2);
-
         JLabel lblNewLabel = new JLabel("Titulo");
         lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
         lblNewLabel.setBounds(341, 59, 198, 46);
@@ -87,7 +76,7 @@ public class ventana6 extends JFrame {
         createButton("New button", 597, 321);
 
         textField = new JTextField();
-        textField.setBounds(407, 110, 86, 20);
+        textField.setBounds(407, 110, 120, 20);
         contentPane.add(textField);
         textField.setColumns(10);
 
@@ -96,41 +85,45 @@ public class ventana6 extends JFrame {
         contentPane.add(lblNewLabel_1);
         
         JButton btnAlimento = new JButton("Aliemnto");
-        btnAlimento.addMouseListener(new MouseAdapter() {
+        btnAlimento.addActionListener(new ActionListener() {
         	@Override
-        	public void mouseClicked(MouseEvent e) {
+        	public void actionPerformed(ActionEvent ew ) {
         		btnAlimento.setBackground(new Color (46, 204, 113));
         	}
+
         });
-        btnAlimento.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent e) {
-        	}
-        });
-        btnAlimento.setBounds(81, 178, 109, 46);
+        btnAlimento.setBounds(103, 221, 109, 46);
         contentPane.add(btnAlimento);
         
-        btnNewButton = new JButton("New button");
-        btnNewButton.setBounds(81, 244, 109, 46);
+        JButton btnNewButton = new JButton("e");
+        btnNewButton.addActionListener(new ActionListener() {
+        	@Override
+        	public void actionPerformed(ActionEvent ew ) {
+        		btnNewButton.setBackground(new Color (46, 204, 113));
+        	}
+
+        });
+        btnNewButton.setBounds(103, 310, 109, 46);
         contentPane.add(btnNewButton);
         
         JButton btnNewButton_2 = new JButton("New button");
-        btnNewButton_2.setBounds(81, 317, 109, 46);
+        btnNewButton_2.setBounds(103, 400, 109, 46);
         contentPane.add(btnNewButton_2);
         
         JButton btnNewButton_3 = new JButton("New button");
-        btnNewButton_3.setBounds(222, 178, 109, 46);
+        btnNewButton_3.setBounds(247, 221, 109, 46);
         contentPane.add(btnNewButton_3);
         
         JButton btnNewButton_4 = new JButton("New button");
-        btnNewButton_4.setBounds(222, 244, 109, 46);
+        btnNewButton_4.setBounds(247, 310, 109, 46);
         contentPane.add(btnNewButton_4);
         
         JButton btnNewButton_5 = new JButton("New button");
-        btnNewButton_5.setBounds(222, 317, 109, 46);
+        btnNewButton_5.setBounds(247, 400, 109, 46);
         contentPane.add(btnNewButton_5);
         
         JButton btnNewButton_6 = new JButton("New button");
-        btnNewButton_6.setBounds(354, 178, 109, 46);
+        btnNewButton_6.setBounds(384, 221, 109, 46);
         contentPane.add(btnNewButton_6);
         
         JButton btnNewButton_8 = new JButton("New button");
@@ -138,36 +131,67 @@ public class ventana6 extends JFrame {
         	public void actionPerformed(ActionEvent e) {
         	}
         });
-        btnNewButton_8.setBounds(354, 317, 109, 46);
+        btnNewButton_8.setBounds(384, 400, 109, 46);
         contentPane.add(btnNewButton_8);
         
         JButton btnNewButton_9 = new JButton("New button");
-        btnNewButton_9.setBounds(508, 178, 109, 46);
+        btnNewButton_9.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        	}
+        });
+        btnNewButton_9.setBounds(527, 221, 109, 46);
         contentPane.add(btnNewButton_9);
         
         JButton btnNewButton_10 = new JButton("New button");
-        btnNewButton_10.setBounds(354, 244, 109, 46);
+        btnNewButton_10.setBounds(384, 310, 109, 46);
         contentPane.add(btnNewButton_10);
         
         JButton btnNewButton_11 = new JButton("New button");
-        btnNewButton_11.setBounds(508, 244, 109, 46);
+        btnNewButton_11.setBounds(527, 310, 109, 46);
         contentPane.add(btnNewButton_11);
         
         JButton btnNewButton_12 = new JButton("New button");
-        btnNewButton_12.setBounds(658, 244, 109, 46);
+        btnNewButton_12.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        	}
+        });
+        btnNewButton_12.setBounds(671, 310, 109, 46);
         contentPane.add(btnNewButton_12);
         
         JButton btnNewButton_13 = new JButton("New button");
-        btnNewButton_13.setBounds(658, 178, 109, 46);
+        btnNewButton_13.setBounds(671, 221, 109, 46);
         contentPane.add(btnNewButton_13);
         
         JButton btnNewButton_14 = new JButton("New button");
-        btnNewButton_14.setBounds(508, 317, 109, 46);
+        btnNewButton_14.setBounds(527, 400, 109, 46);
         contentPane.add(btnNewButton_14);
         
         JButton btnNewButton_7 = new JButton("New button");
-        btnNewButton_7.setBounds(658, 317, 109, 46);
+        btnNewButton_7.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        	}
+        });
+        btnNewButton_7.setBounds(671, 400, 109, 46);
         contentPane.add(btnNewButton_7);
+        
+        JLabel lblNewLabel_2 = new JLabel("New label");
+        lblNewLabel_2.setHorizontalAlignment(SwingConstants.LEFT);
+        lblNewLabel_2.setIcon(new ImageIcon(ventana6.class.getResource("/recursos/logoChef.png")));
+        lblNewLabel_2.setBounds(-113, 61, 379, 163);
+        contentPane.add(lblNewLabel_2);
+        
+                JMenuBar menuBar = new JMenuBar();
+                menuBar.setBounds(230, 23, 488, 28);
+                contentPane.add(menuBar);
+                
+                        JMenuItem mntmNewMenuItem = new JMenuItem("RESTAURANTE");
+                        menuBar.add(mntmNewMenuItem);
+                        
+                                JMenuItem mntmNewMenuItem_1 = new JMenuItem("ALMACEN");
+                                menuBar.add(mntmNewMenuItem_1);
+                                
+                                        JMenuItem mntmNewMenuItem_2 = new JMenuItem("PERSONAL");
+                                        menuBar.add(mntmNewMenuItem_2);
 
         createButton("New button", 104, 398);
         createButton("New button", 267, 398);
