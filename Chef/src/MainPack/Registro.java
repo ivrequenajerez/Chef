@@ -23,7 +23,7 @@ public class Registro extends JFrame {
 	private JTextField textField_4;
 	private JTextField textField_5;
 	private JTextField textField_6;
-//holllla
+
 	/**
 	 * Launch the application.
 	 */
