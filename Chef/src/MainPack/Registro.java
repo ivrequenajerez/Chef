@@ -1,4 +1,4 @@
-package mainPack;
+package MainPack;
 
 import java.awt.Color;
 import java.awt.EventQueue;

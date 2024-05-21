@@ -51,7 +51,7 @@ public class ventana7 extends JFrame {
         setBounds(100, 100, 899, 596);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-
+        setLocationRelativeTo(null);
         setContentPane(contentPane);
         contentPane.setLayout(null);
 
@@ -109,7 +109,7 @@ public class ventana7 extends JFrame {
                                         
                                         JButton btnAgregar = new JButton("Agregar +");
                                         btnAgregar.setBackground(new Color(138, 236, 140));
-                                        btnAgregar.setBounds(736, 131, 89, 23);
+                                        btnAgregar.setBounds(724, 131, 89, 23);
                                         contentPane.add(btnAgregar);
 
         createButton("New button", 104, 398);
