@@ -42,7 +42,7 @@ public class ventana6 extends JFrame {
 
    
     public ventana6() {
-        setIconImage(Toolkit.getDefaultToolkit().getImage(ventana6.class.getResource("/recursos/logoChef.png")));
+        setIconImage(Toolkit.getDefaultToolkit().getImage(ventana6.class.getResource("/recursos/alimentos-saludables.png")));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 899, 596);
         setLocationRelativeTo(null);
@@ -114,7 +114,7 @@ public class ventana6 extends JFrame {
         JButton btnNewCesta = new JButton("");
         btnNewCesta.setBackground(new Color(255, 255, 255));
         btnNewCesta.setIcon(new ImageIcon(ventana6.class.getResource("/recursos/cesta-de-la-compra.png")));
-        btnNewCesta.setBounds(727, 110, 39, 46);
+        btnNewCesta.setBounds(772, 106, 39, 46);
         btnNewCesta.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // Acción para el botón de nueva cesta
@@ -134,50 +134,65 @@ public class ventana6 extends JFrame {
         ArrayList<JButton> botones = new ArrayList<>();
 
         JButton btnNewButton_1 = new JButton("Sandia");
+        btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\Zero\\Documents\\GitHub\\Chef\\Chef\\src\\recursos\\sandia.png"));
         btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        btnNewButton_1.setBounds(77, 184, 120, 46);
+        btnNewButton_1.setBounds(61, 184, 136, 46);
         contentPaneInicio.add(btnNewButton_1);
         botones.add(btnNewButton_1);
         
         JButton btnNewButton_2 = new JButton("Limon");
+        btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\Zero\\Documents\\GitHub\\Chef\\Chef\\src\\recursos\\limon.png"));
         btnNewButton_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        btnNewButton_2.setBounds(77, 259, 113, 46);
+        btnNewButton_2.setBounds(61, 259, 136, 46);
         contentPaneInicio.add(btnNewButton_2);
         botones.add(btnNewButton_2);
         
         JButton btnNewButton_2_1 = new JButton("Esparragos");
+        btnNewButton_2_1.setIcon(new ImageIcon("C:\\Users\\Zero\\Documents\\GitHub\\Chef\\Chef\\src\\recursos\\esparragos.png"));
         btnNewButton_2_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        btnNewButton_2_1.setBounds(77, 406, 113, 46);
+        btnNewButton_2_1.setBounds(61, 406, 136, 46);
         contentPaneInicio.add(btnNewButton_2_1);
         botones.add(btnNewButton_2_1);
         
         JButton btnNewButton_2_2 = new JButton("Lechuga");
+        btnNewButton_2_2.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        	}
+        });
+        btnNewButton_2_2.setIcon(new ImageIcon("C:\\Users\\Zero\\Documents\\GitHub\\Chef\\Chef\\src\\recursos\\lechuga.png"));
         btnNewButton_2_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        btnNewButton_2_2.setBounds(77, 331, 113, 46);
+        btnNewButton_2_2.setBounds(61, 331, 136, 46);
         contentPaneInicio.add(btnNewButton_2_2);
         botones.add(btnNewButton_2_2);
         
         JButton btnNewButton_2_3 = new JButton("Puerro");
+        btnNewButton_2_3.setIcon(new ImageIcon("C:\\Users\\Zero\\Documents\\GitHub\\Chef\\Chef\\src\\recursos\\puerro.png"));
+        btnNewButton_2_3.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        	}
+        });
         btnNewButton_2_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        btnNewButton_2_3.setBounds(230, 184, 109, 46);
+        btnNewButton_2_3.setBounds(226, 184, 120, 46);
         contentPaneInicio.add(btnNewButton_2_3);
         botones.add(btnNewButton_2_3);
         
         JButton btnNewButton_2_4 = new JButton("Coliflor");
+        btnNewButton_2_4.setIcon(new ImageIcon("C:\\Users\\Zero\\Documents\\GitHub\\Chef\\Chef\\src\\recursos\\coliflor.png"));
         btnNewButton_2_4.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        btnNewButton_2_4.setBounds(230, 259, 109, 46);
+        btnNewButton_2_4.setBounds(226, 259, 120, 46);
         contentPaneInicio.add(btnNewButton_2_4);
         botones.add(btnNewButton_2_4);
         
         JButton btnNewButton_2_5 = new JButton("Calabaza");
+        btnNewButton_2_5.setIcon(new ImageIcon("C:\\Users\\Zero\\Documents\\GitHub\\Chef\\Chef\\src\\recursos\\calabaza.png"));
         btnNewButton_2_5.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        btnNewButton_2_5.setBounds(230, 331, 105, 46);
+        btnNewButton_2_5.setBounds(226, 331, 120, 46);
         contentPaneInicio.add(btnNewButton_2_5);
         botones.add(btnNewButton_2_5);
         
         JButton btnNewButton_2_6 = new JButton("Ajo");
         btnNewButton_2_6.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        btnNewButton_2_6.setBounds(230, 406, 113, 46);
+        btnNewButton_2_6.setBounds(226, 406, 120, 46);
         contentPaneInicio.add(btnNewButton_2_6);
         botones.add(btnNewButton_2_6);
         
@@ -205,7 +220,7 @@ public class ventana6 extends JFrame {
         
         JButton btnNewButton_2_10 = new JButton("Zanahoria");
         btnNewButton_2_10.setFont(new Font("Tahoma", Font.PLAIN, 14));
-        btnNewButton_2_10.setBounds(362, 406, 113, 46);
+        btnNewButton_2_10.setBounds(370, 406, 105, 46);
         contentPaneInicio.add(btnNewButton_2_10);
         botones.add(btnNewButton_2_10);
         
@@ -227,7 +242,8 @@ public class ventana6 extends JFrame {
         contentPaneInicio.add(btnNewButton_2_13);
         botones.add(btnNewButton_2_13);
         
-        JButton btnNewButton_2_14 = new JButton("Berenjema");
+        JButton btnNewButton_2_14 = new JButton("Naranja");
+        btnNewButton_2_14.setIcon(new ImageIcon("C:\\Users\\Zero\\Documents\\GitHub\\Chef\\Chef\\src\\recursos\\naranja.png"));
         btnNewButton_2_14.setFont(new Font("Tahoma", Font.PLAIN, 14));
         btnNewButton_2_14.setBounds(509, 406, 113, 46);
         contentPaneInicio.add(btnNewButton_2_14);
@@ -260,8 +276,9 @@ public class ventana6 extends JFrame {
     
         // Botón "Añadir Cesta"
         JButton btnCesta = new JButton("Añadir a Cesta");
+        btnCesta.setIcon(new ImageIcon(ventana6.class.getResource("/recursos/cesta-de-la-compra.png")));
         btnCesta.setFont(new Font("Palatino Linotype", Font.PLAIN, 14));
-        btnCesta.setBounds(329, 494, 134, 41);
+        btnCesta.setBounds(329, 494, 146, 41);
         btnCesta.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 for(JButton button:botones) {
