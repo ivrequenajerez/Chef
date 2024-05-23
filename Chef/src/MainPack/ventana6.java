@@ -452,6 +452,7 @@ public class ventana6 extends JFrame {
         botones.add(btnNewButton_2_14_4);
 
         // Botón "Añadir Cesta"
+       
         ArrayList<String> listaCesta = new ArrayList<>();
 
         JButton btnCesta = new JButton("Añadir a Cesta");
@@ -464,13 +465,11 @@ public class ventana6 extends JFrame {
 	                for (JButton button : botones) {
 	                    if (button.getBackground().equals(new Color( 129, 242, 22 ))) {
 	                        listaCesta.add(button.getText());
-	                        soloUno=true;
-	                                    
+	                        soloUno=true;               
 	                    }
 	                }
 	                if(soloUno) {
 	                	 JOptionPane.showMessageDialog(null, "Se han añadido los elementos a la cesta.", "Añadidos a la cesta", JOptionPane.INFORMATION_MESSAGE);
-
 	                }
 	                
             }
